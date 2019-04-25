@@ -22,7 +22,7 @@ switch ($function){
             echo 'Login success'.PHP_EOL;
             $file_config = fopen("config", "w");
             echo 'Token: '.$login['token'].PHP_EOL;
-            fwrite($file_config, "TOKEN=".$login['token']);
+            fwrite($file_config, "TOKEN=".$login['token'].PHP_EOL."DOMAIN_NAME=".$login['domain_name']);
             fclose($file_config);
             echo 'Created .env and save token'.PHP_EOL;
         }
@@ -36,16 +36,22 @@ switch ($function){
         $config = [];
         foreach ($file_config as $line) {
             $temp = explode('=',$line);
-            $config[$temp[0]] = $temp[1];
+            $config[$temp[0]] = trim($temp[1]);
         }
         switch ($who){
             case 'affiliates':
             case 'aff':{
                 $rms = new RMSPost($config['TOKEN']);
+                $rms->setDomainName($config['DOMAIN_NAME']);
+
                 $path = realpath($where);
                 $excel = new Read($path);
                 $data = $excel->getData();
-
+                $log = $rms->importAffiliates($data);
+                $file_config = fopen("Import-Affiliate-".date('Y-m-d H:i:s').".log", "w");
+                fwrite($file_config, implode(PHP_EOL,$log));
+                fclose($file_config);
+                echo 'Import completed!'.PHP_EOL;
             } break;
             case 'customers':
             case 'cus':{
@@ -57,7 +63,7 @@ switch ($function){
         }
     }
 
-    default: {
-        echo 'stupid';
-    }
+//    default: {
+//        echo 'stupid';
+//    }
 }
