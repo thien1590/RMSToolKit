@@ -26,7 +26,8 @@ switch ($function){
             fclose($file_config);
             echo 'Created .env and save token'.PHP_EOL;
         }
-        echo 'Next step: import [affiliates/customers] [file path]';
+        echo 'Next step: Import [affiliates/customers] [file path]'.PHP_EOL;
+        echo 'NOTE: Import aff need subs admin account, but customer need only channel account'.PHP_EOL;
     } break;
 
     case 'import':{
@@ -38,24 +39,30 @@ switch ($function){
             $temp = explode('=',$line);
             $config[$temp[0]] = trim($temp[1]);
         }
+        $rms = new RMSPost($config['TOKEN']);
+        $rms->setDomainName($config['DOMAIN_NAME']);
+
+        $path = realpath($where);
+        $excel = new Read($path);
+        $data = $excel->getData();
+
         switch ($who){
             case 'affiliates':
             case 'aff':{
-                $rms = new RMSPost($config['TOKEN']);
-                $rms->setDomainName($config['DOMAIN_NAME']);
-
-                $path = realpath($where);
-                $excel = new Read($path);
-                $data = $excel->getData();
                 $log = $rms->importAffiliates($data);
-                $file_config = fopen("Import-Affiliate-".date('Y-m-d H:i:s').".log", "w");
+                $file_config = fopen("Import-Affiliate-".date('Y-m-d-H-i-s').".log", "w");
                 fwrite($file_config, implode(PHP_EOL,$log));
                 fclose($file_config);
-                echo 'Import completed!'.PHP_EOL;
+                echo 'Import affiliates completed!'.PHP_EOL;
             } break;
             case 'customers':
             case 'cus':{
-                echo 'test';
+                $channel = $argv[4];
+                $log = $rms->importCustomers($data,$channel);
+                $file_config = fopen("Import-Customers-".date('Y-m-d-H-i-s').".log", "w");
+                fwrite($file_config, implode(PHP_EOL,$log));
+                fclose($file_config);
+                echo 'Import customers completed!'.PHP_EOL;
             } break;
             default:{
                 echo 'just only support affiliates or customers';
@@ -63,7 +70,4 @@ switch ($function){
         }
     }
 
-//    default: {
-//        echo 'stupid';
-//    }
 }

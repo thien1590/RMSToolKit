@@ -41,7 +41,8 @@ class RMSPost
                 $response['domain_name'] = $this->getSubsDomainName();
             }else
                 $response['error'] = $login['status'];
-        }
+        } else
+            echo 'Login fail.'.PHP_EOL;
 
         return $response;
     }
@@ -77,14 +78,55 @@ class RMSPost
         unset($name[count($name)-1]);
         $affiliate['last_name'] = implode(' ', $name);
 
-        return $this->post($affiliate,'v1/affiliates/',"POST");
+        return $this->post($affiliate,'v1/affiliates/sign_up');
     }
 
     public function importAffiliates($affiliates){
         $log = [];
         foreach ($affiliates as $aff){
-            echo 'Import ['.$aff['nickname'].']';
-            $log[] = json_encode($this->createAffiliate($aff));
+            echo 'Import ['.$aff['nickname'].']'.PHP_EOL;
+            $item = json_encode($this->createAffiliate($aff));
+            $log[] = $item;
+        }
+        return $log;
+    }
+
+    public function createCustomer($cus, $channel, $number){
+        if(!is_array($cus))
+            return false;
+
+        $order = array(
+            "order_lines" => array(
+                array(
+                    "product" => array(
+                        "code" => "IMPORTCUSTOMER",
+                        "name" => "Import dữ lệu khách hàng",
+                        "price" => 1000
+                    ),
+                    "price"=> 1000,
+                    "commission" => 0,
+                    "quantity" => 1
+                ),
+            ),
+            "channel_domain_name" =>$channel,
+            "number" => $number,
+            "note" => $cus['note'],
+            "nickname" => $cus['referrer'],
+            "customer" => array(
+                "fullname" => $cus['name'],
+                "email"    => $cus['email'],
+                "address"  => $cus['address'],
+                "phone"    => $cus['phone']
+            )
+        );
+        return $this->post($order,'v1/orders');
+    }
+
+    public function importCustomers($customers,$channel){
+        $log = [];
+        foreach ($customers as $key => $cus){
+            echo 'Import ['.$cus['name'].']'.PHP_EOL;
+            $log[] = json_encode($this->createCustomer($cus,$channel,'ODIMPORT'.$key));
         }
         return $log;
     }
