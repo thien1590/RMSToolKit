@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34411fb9-b31b-43b0-a45e-0c792eb29a4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/RMSPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/RMSPost.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config" beforeDir="false" afterPath="$PROJECT_DIR$/config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data.xls" beforeDir="false" afterPath="$PROJECT_DIR$/data.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rms.php" beforeDir="false" afterPath="$PROJECT_DIR$/rms.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,14 +14,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rms.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="603">
-              <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+            <state relative-caret-position="765">
+              <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
               <folding>
-                <marker date="1556179393695" expanded="true" signature="1620:1778" ph="..." />
+                <marker date="1556247562648" expanded="true" signature="1694:1852" ph="..." />
               </folding>
             </state>
           </provider>
@@ -33,40 +31,84 @@
         <entry file="file://$PROJECT_DIR$/config">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="11" selection-start-line="1" selection-end-line="1" selection-end-column="11" />
+              <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/RMSPost.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="82" column="20" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
+            <state relative-caret-position="1088">
+              <caret line="78" column="97" selection-start-line="78" selection-start-column="97" selection-end-line="78" selection-end-column="97" />
               <folding>
                 <element signature="n#__construct#0;n#RMSPost#0;n#!!top" />
                 <element signature="n#setDomainName#0;n#RMSPost#0;n#!!top" />
-                <element signature="n#login#0;n#RMSPost#0;n#!!top" />
-                <element signature="n#getSubsDomain#0;n#RMSPost#0;n#!!top" />
+                <element signature="n#getSubsDomainName#0;n#RMSPost#0;n#!!top" />
+                <element signature="n#importAffiliates#0;n#RMSPost#0;n#!!top" />
+                <element signature="n#createCustomer#0;n#RMSPost#0;n#!!top" />
+                <element signature="n#importCustomers#0;n#RMSPost#0;n#!!top" />
+                <element signature="n#post#0;n#RMSPost#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <entry file="file://$PROJECT_DIR$/Import-Affiliate-2019-05-03-10-02-32.log">
+          <provider selected="true" editor-type-id="LogFileEditorProvider">
+            <state relative-caret-position="408">
+              <caret line="24" column="464" selection-start-line="24" selection-start-column="464" selection-end-line="24" selection-end-column="464" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Import-Customers-2019-05-03-10-24-53.log">
+          <provider selected="true" editor-type-id="LogFileEditorProvider">
+            <state relative-caret-position="34">
+              <caret line="2" column="28" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Import-Affiliate-2019-05-03-10-31-41.log">
+          <provider selected="true" editor-type-id="LogFileEditorProvider">
+            <state>
+              <caret column="28" selection-start-column="24" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Import-Affiliate-2019-05-03-09-19-24.log">
+          <provider selected="true" editor-type-id="LogFileEditorProvider">
+            <state relative-caret-position="204">
+              <caret line="12" column="543" selection-start-line="12" selection-start-column="507" selection-end-line="12" selection-end-column="543" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Import-Affiliate-2019-05-03-09-57-12.log">
+          <provider selected="true" editor-type-id="LogFileEditorProvider">
+            <state relative-caret-position="1683">
+              <caret line="99" column="28" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Import-Customers-2019-05-03-09-11-56.log">
+          <provider selected="true" editor-type-id="LogFileEditorProvider" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/Read.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="340">
+              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -76,6 +118,13 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>var</find>
+      <find>:200</find>
+      <find>6b687377-ff54-4450-b229-c737485da746</find>
+      <find>:400</find>
+      <find>already exists</find>
+      <find>&quot;status&quot;:422</find>
+      <find>huynhthanhtoan</find>
+      <find>:422</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -93,8 +142,8 @@
         <option value="$PROJECT_DIR$/vendor/autoload.php" />
         <option value="$PROJECT_DIR$/Classes/Read.php" />
         <option value="$PROJECT_DIR$/test.php" />
-        <option value="$PROJECT_DIR$/Classes/RMSPost.php" />
         <option value="$PROJECT_DIR$/rms.php" />
+        <option value="$PROJECT_DIR$/Classes/RMSPost.php" />
       </list>
     </option>
   </component>
@@ -102,10 +151,10 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -135,7 +184,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shoply-sys" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -172,20 +221,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556090789212</updated>
-      <workItem from="1556090790385" duration="24880000" />
+      <workItem from="1556090790385" duration="33895000" />
+      <workItem from="1556210191205" duration="14000" />
+      <workItem from="1556227421207" duration="11163000" />
+      <workItem from="1556735658090" duration="33000" />
+      <workItem from="1556851775713" duration="5648000" />
+      <workItem from="1556943147899" duration="2000" />
+      <workItem from="1557198261952" duration="599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24880000" />
+    <option name="totallyTimeSpent" value="51354000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12739871" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1337953" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Version Control" order="2" />
@@ -201,20 +255,35 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info active="true" anchor="right" id="Terminal" order="4" visible="true" weight="0.3411514" />
+      <window_info active="true" anchor="right" id="Terminal" order="4" visible="true" weight="0.41577825" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13166311" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info active="true" anchor="right" id="Terminal" order="4" visible="true" weight="0.38219616" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Classes/rms.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/rms.php" />
     <entry file="file://$PROJECT_DIR$/Classes/PHPExcel/Shared/OLE.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -236,57 +305,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+    <entry file="file://$PROJECT_DIR$/.env" />
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php" />
+    <entry file="file://$PROJECT_DIR$/test.php" />
+    <entry file="file://$PROJECT_DIR$/Import-Affiliate-2019-04-25-11-50-24.log" />
+    <entry file="file://$PROJECT_DIR$/Import-Affiliate-2019-04-26-04-56-05.log" />
+    <entry file="file://$PROJECT_DIR$/Import-Customers-2019-04-26-04-56-43.log" />
+    <entry file="file://$PROJECT_DIR$/Import-Customers-2019-04-26-04-58-44.log" />
+    <entry file="file://$PROJECT_DIR$/Import-Affiliate-2019-04-26-05-12-55.log" />
+    <entry file="file://$PROJECT_DIR$/Import-Affiliate-2019-04-26-05-27-34.log" />
+    <entry file="file://$PROJECT_DIR$/Import-Affiliate-2019-04-26-09-09-52.log" />
+    <entry file="file://$PROJECT_DIR$/Import-Affiliate-2019-04-26-09-23-35.log" />
+    <entry file="file://$PROJECT_DIR$/Import-Affiliate-2019-04-26-10-34-49.log" />
+    <entry file="file://$PROJECT_DIR$/Import-Affiliate-2019-04-26-11-07-46.log" />
+    <entry file="file://$PROJECT_DIR$/Import-Affiliate-2019-05-03-09-05-37.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="51">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Read.php">
+    <entry file="file://$PROJECT_DIR$/Import-Affiliate-2019-05-03-09-00-12.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="544">
+          <caret line="32" column="28" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Import-Customers-2019-05-03-09-11-18.log" />
+    <entry file="file://$PROJECT_DIR$/rms.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="765">
+          <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+          <folding>
+            <marker date="1556247562648" expanded="true" signature="1694:1852" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="11" selection-start-line="1" selection-end-line="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rms.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
-          <folding>
-            <marker date="1556179393695" expanded="true" signature="1620:1778" ph="..." />
-          </folding>
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/RMSPost.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="82" column="20" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
+        <state relative-caret-position="1088">
+          <caret line="78" column="97" selection-start-line="78" selection-start-column="97" selection-end-line="78" selection-end-column="97" />
           <folding>
             <element signature="n#__construct#0;n#RMSPost#0;n#!!top" />
             <element signature="n#setDomainName#0;n#RMSPost#0;n#!!top" />
-            <element signature="n#login#0;n#RMSPost#0;n#!!top" />
-            <element signature="n#getSubsDomain#0;n#RMSPost#0;n#!!top" />
+            <element signature="n#getSubsDomainName#0;n#RMSPost#0;n#!!top" />
+            <element signature="n#importAffiliates#0;n#RMSPost#0;n#!!top" />
+            <element signature="n#createCustomer#0;n#RMSPost#0;n#!!top" />
+            <element signature="n#importCustomers#0;n#RMSPost#0;n#!!top" />
+            <element signature="n#post#0;n#RMSPost#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Import-Affiliate-2019-05-03-10-02-32.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="408">
+          <caret line="24" column="464" selection-start-line="24" selection-start-column="464" selection-end-line="24" selection-end-column="464" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Import-Customers-2019-05-03-10-24-53.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="34">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Import-Affiliate-2019-05-03-09-19-24.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="204">
+          <caret line="12" column="543" selection-start-line="12" selection-start-column="507" selection-end-line="12" selection-end-column="543" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Import-Affiliate-2019-05-03-09-57-12.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="1683">
+          <caret line="99" column="28" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Import-Customers-2019-05-03-09-11-56.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Read.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Import-Affiliate-2019-05-03-10-31-41.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state>
+          <caret column="28" selection-start-column="24" selection-end-column="28" />
         </state>
       </provider>
     </entry>

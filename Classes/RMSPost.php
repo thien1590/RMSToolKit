@@ -3,7 +3,7 @@
 
 class RMSPost
 {
-    protected $api = "http://stage.app.rms.com.vn:9090/";
+    protected $api = "https://api.rms.com.vn/";
     private $token;
     private $domain_name;
 
@@ -29,6 +29,7 @@ class RMSPost
             'password: '.$password
         ]);
 
+
         $response = [
             'success' => false,
 //            'raw' => $login
@@ -36,7 +37,7 @@ class RMSPost
         if($login['success']){
             if ($login['status']==200){
                 $response['success'] = true;
-                $response['token'] = trim(explode(':',$login['header'][2])[1]);
+                $response['token'] = trim(explode(':',$login['header'][3])[1]);
                 $this->token = $response['token'];
                 $response['domain_name'] = $this->getSubsDomainName();
             }else
@@ -75,8 +76,10 @@ class RMSPost
         );
         $name = explode(' ',$aff['name']);
         $affiliate['first_name'] = $name[count($name)-1];
+        $affiliate['first_name'] = $affiliate['first_name']?$affiliate['first_name']:$aff['name'];
         unset($name[count($name)-1]);
         $affiliate['last_name'] = implode(' ', $name);
+        $affiliate['last_name'] = $affiliate['last_name']?$affiliate['last_name']:$affiliate['first_name'];
 
         return $this->post($affiliate,'v1/affiliates/sign_up');
     }
